@@ -1,4 +1,5 @@
-FROM thecodingmachine/php:7.4-v3-apache
+FROM php:8.0-apache
+FROM composer/composer:2.2.21
 
 ENV PHP_EXTENSION_MAILPARSE=1 \
     PHP_EXTENSION_IMAP=1 \
