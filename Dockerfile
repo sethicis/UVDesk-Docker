@@ -7,7 +7,7 @@ ENV PHP_EXTENSION_MAILPARSE=1 \
     APACHE_DOCUMENT_ROOT=/var/www/html/public
 
 RUN apt update \
-    && apt install git
+    && apt install -y git
 RUN composer clear-cache \
     && composer create-project uvdesk/community-skeleton /var/www/html
 RUN a2enmod rewrite \
