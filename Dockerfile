@@ -1,8 +1,6 @@
 FROM php:8.0-apache
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-COPY composer.json composer.json
-COPY composer.lock composer.lock
 
 ENV PHP_EXTENSION_MAILPARSE=1 \
     PHP_EXTENSION_IMAP=1 \
